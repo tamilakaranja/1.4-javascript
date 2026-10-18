@@ -39,4 +39,13 @@ function showQuotes() {
 }
  const quotes = "Believe in yourself!";
 
- 
+// shows the quotes and age 
+function displayUser(name, age) {
+  // 3. Greeting using a template literal
+  greetingEl.textContent = `Hello, ${name}!  Welcome back.`;
+  monthsEl.textContent = `You are ${age} years old, which is ${calculateAgeInMonths(age)} months.`;
+  showAdultMessage(age);
+  showQuotes();
+  results.classList.remove("hidden");
+}
+
