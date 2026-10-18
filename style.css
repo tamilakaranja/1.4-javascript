@@ -2,6 +2,8 @@
     --black: #050000;
    --gold: #FFD700;
     --white: #FFD700;
+    --red: #ff0a0a;
+
 
 }
 /* basic styling  */
@@ -30,6 +32,7 @@ body {
 }
 
 h1 { text-align: center; margin-bottom: 20px; color: var(--black); }
+/* form  */
 
 form
 form { 
@@ -42,8 +45,9 @@ input {
   border-radius: 8px;
   font-size: 1rem;
 }
-input:focus { outline: none; border-color: var(--gold); }
+input:focus { outline: none; border-color: var(--red); }
 
+/* button  */
 button {
     padding: 8px 7%;
     margin-top: 20px;
@@ -54,7 +58,7 @@ button {
 }
 
 button:hover { background: var(--gold); }
-
+/* results  */
 #results { margin-top: 24px; }
 .box {
   background: #f3f4f6;
@@ -62,3 +66,13 @@ button:hover { background: var(--gold); }
   border-radius: 10px;
   margin-bottom: 14px;
 }
+.box h3 { 
+    margin-bottom: 6px;
+     font-size: 1rem;
+      color: black; }
+
+      /* quotes  */
+#quotes { padding-left: 20px; }
+#quotes li { margin-bottom: 4px;
+     font-style: italic; }
+     
