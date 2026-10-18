@@ -48,4 +48,15 @@ function displayUser(name, age) {
   showQuotes();
   results.classList.remove("hidden");
 }
-
+// submit and store 
+form.addEventListener("submit", function (event) {
+  event.preventDefault(); 
+ 
+  const name = nameInput.value.trim();
+  const age = Number(ageInput.value);
+ 
+  localStorage.setItem("userName", name);
+  localStorage.setItem("userAge", age);
+ 
+  displayUser(name, age);
+});
