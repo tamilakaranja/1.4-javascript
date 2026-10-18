@@ -16,3 +16,13 @@ const QUOTE = "The secret of getting ahead is getting started.";
 function calculateAgeInMonths(age) {
   return age * 12;
 }
+// adult consent 
+function showAdultMessage(age) {
+  if (age >= 18) {
+    adultEl.textContent = "You can access adult content.";
+    adultEl.className = "allowed";
+  } else {
+    adultEl.textContent = "You are too young for adult content.";
+    adultEl.className = "denied";
+  }
+}
