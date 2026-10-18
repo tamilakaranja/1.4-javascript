@@ -68,3 +68,13 @@ clearBtn.addEventListener("click", function () {
   results.classList.add("hidden");
   form.reset();
 });
+
+// store saved data 
+const savedName = localStorage.getItem("userName");
+const savedAge = localStorage.getItem("userAge");
+ 
+if (savedName && savedAge) {
+  nameInput.value = savedName;
+  ageInput.value = savedAge;
+  displayUser(savedName, Number(savedAge));
+}
