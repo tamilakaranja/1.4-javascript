@@ -60,3 +60,11 @@ form.addEventListener("submit", function (event) {
  
   displayUser(name, age);
 });
+
+// clear and save data 
+clearBtn.addEventListener("click", function () {
+  localStorage.removeItem("userName");
+  localStorage.removeItem("userAge");
+  results.classList.add("hidden");
+  form.reset();
+});
