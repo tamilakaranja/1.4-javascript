@@ -26,3 +26,17 @@ function showAdultMessage(age) {
     adultEl.className = "denied";
   }
 }
+
+// quotes 
+// loops 
+function showQuotes() {
+  quotesEl.innerHTML = ""; // clears the old quotes
+  for (let i = 1; i <= 5; i++) {
+    const li = document.createElement("li");
+    li.textContent = quotes;
+    quotesEl.appendChild(li);
+}
+}
+ const quotes = "Believe in yourself!";
+
+ 
