@@ -1,0 +1,15 @@
+/* basic styling  */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px 16px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #6366f1, #ec4899);
+  color: #1f2937;
+}
+
