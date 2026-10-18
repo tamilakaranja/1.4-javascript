@@ -79,3 +79,9 @@ button:hover { background: var(--gold); }
      .hidden {
     display: none;
 }
+.allowed {
+    color: green;
+}
+.denied {
+    color: red;
+}
