@@ -55,3 +55,10 @@ button {
 
 button:hover { background: var(--gold); }
 
+#results { margin-top: 24px; }
+.box {
+  background: #f3f4f6;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
